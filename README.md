@@ -1,26 +1,35 @@
-````markdown
 # Candiview
 
-Candiview is a **Next.js application** designed for managing election candidates, voters, and results in an interactive and persistent way. It uses **React Context API** with **localStorage** integration to ensure that data such as candidates and voters is stored and persists even after refreshing the page.
+Candiview is a **Next.js application** designed for managing **job applications, candidates, and interview assessments** in an interactive and efficient way. It enables **candidates** to track their applications and AI-powered assessments, while **interviewers** can review applicants, scores, and interview history — all in one place.
+
+---
+
+## 🌐 Live Demo
+
+🔗 [Candiview on Vercel](https://candiview.vercel.app/)
 
 ---
 
 ## 🚀 Features
 
-- 📋 Add, view, and manage **candidates** and **voters**
-- 🗳️ Cast and track votes
-- 💾 Data persistence using **localStorage**
-- ⚡ Built with **Next.js 14 (App Router)**
-- 🎨 Clean and responsive UI (no UI changes required during refinement)
+* 👨‍💻 **Candidate Dashboard** – Track applications, next interview steps, and AI-assessment results
+* 📝 **Resume Upload & Parsing** – Upload resumes for structured data extraction
+* 🤖 **AI-Powered Evaluation** – Automated candidate evaluation with scoring & summaries
+* 🎯 **Interviewer Dashboard** – View candidates, filter by job roles, and access Q&A history
+* 💾 Persistent application data using APIs (with Clerk authentication)
+* ⚡ Built with **Next.js 14 (App Router)**
+* 🎨 Clean, responsive UI with Tailwind CSS + ShadCN
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Next.js** – Full-stack React framework
-- **React Context API** – State management
-- **LocalStorage** – Data persistence
-- **Tailwind CSS** – Styling
+* **Next.js** – Full-stack React framework
+* **Clerk** – Authentication & user management
+* **React Context API** – State management for applications and candidates
+* **Tailwind CSS** – Styling
+* **ShadCN/UI & Lucide Icons** – Modern UI components
+* **API Routes** – Handle job status, applications, and assessments
 
 ---
 
@@ -32,7 +41,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/your-username/candiview.git
 cd candiview
 npm install
-````
+```
 
 Run the development server:
 
@@ -54,12 +63,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 ```
 candiview/
-├── app/                # Next.js App Router pages
-├── components/         # Reusable UI components
-├── context/            # React Context for state management
-├── public/             # Static assets
-├── styles/             # Global styles
-└── package.json        # Dependencies and scripts
+├── app/                     # Next.js App Router pages
+│   ├── dashboard/           # Candidate & Interviewer dashboards
+│   ├── api/                 # API routes for jobs & applications
+│   └── _components/         # Header, Footer, shared components
+├── context/                 # React Context (Applications, Candidates)
+├── providers/               # Theme & global providers
+├── public/                  # Static assets (icons, images)
+├── styles/                  # Global styles
+└── package.json             # Dependencies and scripts
 ```
 
 ---
@@ -68,9 +80,10 @@ candiview/
 
 Deploy easily on **Vercel**:
 
-* Push your project to GitHub
-* Import repo into [Vercel](https://vercel.com)
-* Get your live link instantly
+1. Push your project to GitHub
+2. Import repo into [Vercel](https://vercel.com)
+3. Add **Clerk environment variables** in Vercel dashboard
+4. Get your live link instantly
 
 For more info, check the [Next.js deployment docs](https://nextjs.org/docs/app/building-your-application/deploying).
 
@@ -79,14 +92,7 @@ For more info, check the [Next.js deployment docs](https://nextjs.org/docs/app/b
 ## 📖 Learn More
 
 * [Next.js Documentation](https://nextjs.org/docs)
+* [Clerk Authentication](https://clerk.com/docs)
 * [React Context](https://react.dev/reference/react/useContext)
 * [Tailwind CSS](https://tailwindcss.com)
-
----
-
-
-
----
-
-```
-```
+* [ShadCN/UI](https://ui.shadcn.com)
