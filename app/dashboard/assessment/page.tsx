@@ -60,12 +60,12 @@ export default function StartTestPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background-light dark:bg-background-dark font-body text-slate-700 dark:text-slate-300">
-      <main className="flex-grow -mt-72 md:ml-24 flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
+      <main className="flex-grow  md:ml-24 flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-3xl">
           <div className="bg-white dark:bg-slate-900 shadow-card dark:shadow-card-dark rounded-xl p-8 md:p-12 border border-slate-200 dark:border-slate-800">
             <div className="text-center mb-8">
               <h2 className="text-4xl font-extrabold font-display text-slate-900 dark:text-white tracking-tight">
-                Software Development Skills Test
+                {application.job_name} skills Test
               </h2>
               <p className="mt-3 text-lg text-slate-600 dark:text-slate-400">
                 Ready to showcase your expertise? Follow the instructions below.
