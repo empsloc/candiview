@@ -101,7 +101,7 @@ export default function StartTestPage() {
                       <Timer />
                     </span>
                     <span>
-                      You have <strong>60 minutes</strong> to complete the test. The timer
+                      You have <strong>6 questions</strong> to complete the test. The timer
                       starts immediately and cannot be paused.
                     </span>
                   </li>
@@ -111,15 +111,15 @@ export default function StartTestPage() {
               {/* Timer */}
               <div>
                 <h3 className="text-xl text-center font-bold font-display text-slate-800 dark:text-slate-100 mb-4">
-                  Time Allotment
+                  Question Allotment
                 </h3>
                 <div className="flex justify-center space-x-4 text-center">
                   <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-4 w-28 shadow-sm">
                     <div className="text-5xl font-extrabold text-primary-600 dark:text-primary-500 font-display">
-                      60
+                      6
                     </div>
                     <div className="text-sm text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wider">
-                      Minutes
+                      Questions
                     </div>
                   </div>
                 </div>
